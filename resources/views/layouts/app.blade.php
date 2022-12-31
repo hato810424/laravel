@@ -9,8 +9,8 @@
         <link rel="icon" type="image/x-icon" href="/favicon.ico">
     </head>
     <body id="body">
-        @include('layout.header')
+        @include('layouts.header')
         @yield('content')
-        @include('layout.footer')
+        @include('layouts.footer')
     </body>
 </html>

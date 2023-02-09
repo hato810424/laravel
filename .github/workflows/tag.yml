@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    if: ${{ github.ref == 'refs/heads/master' }}
+    if: ${{ github.ref_name == 'master' }}
     runs-on: ubuntu-latest
     steps:
-      - run:  echo '${{ toJson(github) }}'
+      - run: echo '${{ toJson(github) }}'
